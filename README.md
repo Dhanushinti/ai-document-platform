@@ -78,6 +78,22 @@ ai-doc-platform/
 ├── README.md
 └── requirements.txt               # Root-level for Render deployment
 
+## 📸 Screenshots
+
+### 🏠 Dashboard
+![Dashboard Screenshot](screenshots/dashboard.png)
+
+### 🧠 AI Generator
+![Outline Screenshot](screenshots/output.png)
+
+### 📄 Register Editor
+![Editor Screenshot](screenshots/register.png)
+
+### 💾 SignIn Options
+![Export Screenshot](screenshots/sign_in.png)
+
+### Choose options docx/pptx
+![Export Screenshot](screenshots/choose.png)
 
 ## ⚙️ Setup Instructions
 
