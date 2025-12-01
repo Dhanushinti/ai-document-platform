@@ -119,31 +119,42 @@ Export Final Document
 “Summarize in under 100 words.”
 
 📦 Folder Structure
+```bash
 ai-doc-platform/
-│
 ├── backend/
 │   ├── app/
-│   │   ├── main.py
-│   │   ├── auth.py
-│   │   ├── models.py
-│   │   ├── schemas.py
-│   │   ├── routers/
-│   │   │   ├── auth.py
-│   │   │   ├── generate.py
-│   │   │   ├── refine_feedback.py
-│   │   │   ├── export.py
-│   ├── requirements.txt
-│   ├── .env
+│   │   ├── main.py               # FastAPI entry point
+│   │   ├── auth.py               # User authentication (JWT)
+│   │   ├── models.py             # SQLAlchemy models
+│   │   ├── schemas.py            # Pydantic schemas
+│   │   ├── llm_service.py        # Gemini API integration & refinement logic
+│   │   └── routers/
+│   │       ├── auth.py           # Login & Register routes
+│   │       ├── generate.py       # AI document generation
+│   │       ├── refine_feedback.py# AI refinement, like/dislike, comments
+│   │       ├── export.py         # Export DOCX/PPTX
+│   │       └── projects.py       # Project CRUD operations
+│   ├── requirements.txt          # Backend dependencies
+│   ├── .env                      # Environment variables (ignored in Git)
+│   └── ai_doc_app.db             # SQLite database (ignored in Git)
 │
 ├── frontend/
-│   ├── src/pages/
-│   │   ├── Dashboard.jsx
-│   │   ├── Editor.jsx
-│   │   ├── Login.jsx
-│   │   ├── ProjectConfig.jsx
-│   ├── package.json
+│   ├── src/
+│   │   ├── pages/
+│   │   │   ├── Dashboard.jsx     # Project list view
+│   │   │   ├── Editor.jsx        # Interactive editor (AI refine/comments)
+│   │   │   ├── Login.jsx         # Authentication UI
+│   │   │   └── ProjectConfig.jsx # Outline setup & AI suggestion
+│   │   ├── App.jsx               # React router setup
+│   │   ├── main.jsx              # Entry point
+│   │   └── api.js                # Axios API service
+│   ├── package.json              # Frontend dependencies
+│   └── tailwind.config.js        # Tailwind setup
 │
-└── README.md
+├── .gitignore
+├── README.md
+└── requirements.txt              # Root-level requirements (for Render)
+```
 
 🏁 Author
 
