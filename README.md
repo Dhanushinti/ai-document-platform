@@ -142,17 +142,6 @@ GENAI_API_KEY = your_gemini_api_key
 
 Frontend can be deployed separately on Vercel/Netlify, with API base URL set to your Render backend.
 
-## Screen Shots
-register page
-<img width="2872" height="1446" alt="Screenshot 2025-12-01 090006" src="https://github.com/user-attachments/assets/23c12294-290c-4323-9bb2-a264868de2fd" />
-login page
-<img width="2878" height="1450" alt="Screenshot 2025-12-01 085723" src="https://github.com/user-attachments/assets/b5a94340-4eca-4fcd-b29a-26368cf1f5ca" />
-home page
-<img width="2865" height="1433" alt="Screenshot 2025-12-01 085714" src="https://github.com/user-attachments/assets/518adfbe-b047-45f9-a835-8f33a29f1113" />
-choose doc type page
-<img width="2879" height="1441" alt="Screenshot 2025-12-01 093546" src="https://github.com/user-attachments/assets/61dc0186-c2ce-48e3-adc8-9c95f99c9335" />
-output page
-<img width="2879" height="1434" alt="Screenshot 2025-12-01 085110" src="https://github.com/user-attachments/assets/68ff5e76-89af-4b1d-aa05-8c9ac83dae05" />
 
 🧑‍💻 Usage Flow
 
