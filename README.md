@@ -77,6 +77,7 @@ ai-doc-platform/
 ├── .gitignore
 ├── README.md
 └── requirements.txt               # Root-level for Render deployment
+---
 
 ## 📸 Screenshots
 
