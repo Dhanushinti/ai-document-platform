@@ -52,7 +52,7 @@ Export	python-docx, python-pptx
 
 ⚙️ Setup Instructions
 1️⃣ Clone the Repository
-git clone https://github.com/<your-username>/ai-doc-platform.git
+git clone [https://github.com/<your-username>/ai-doc-platform](https://github.com/Dhanushinti/ai-document-platform)
 cd ai-doc-platform
 
 2️⃣ Backend Setup
@@ -75,9 +75,11 @@ Run backend locally:
 uvicorn app.main:app --reload
 
 3️⃣ Frontend Setup
+
 cd ../frontend
 npm install
 npm run dev
+
 
 🌍 Deployment (Render Setup)
 Setting	Value
