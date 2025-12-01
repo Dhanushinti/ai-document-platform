@@ -1,54 +1,83 @@
-🧠 AI-Assisted Document & Presentation Generator
-(FastAPI + React + Gemini AI)
+# 🧠 AI-Doc Platform — AI Document & PPT Generator  
 
-An end-to-end AI-powered authoring platform that enables users to generate, refine, and export structured Word (.docx) and PowerPoint (.pptx) documents.
+AI-Doc Platform is a **FastAPI + React.js** intelligent document generation system powered by **Google Gemini**.  
+It allows users to **create, refine, and export** professional Word and PowerPoint files section-by-section — all with AI assistance.  
 
-Users can log in, create projects, configure outlines, generate content using Google Gemini, iteratively refine each section using AI prompts, and export final documents — all in one place.
+This platform enables:
+✅ Dynamic document generation  
+✅ AI-driven content refinement  
+✅ User feedback & commenting  
+✅ Export to `.docx` and `.pptx`  
+✅ Seamless login and project management  
 
-🚀 Features
+---
 
-✅ User Authentication & Project Management
+## 🧩 Tech Stack  
 
-Secure JWT-based login and registration
+| Layer | Technologies |
+|-------|---------------|
+| **Frontend** | React.js, Vite, Tailwind CSS, Axios |
+| **Backend** | FastAPI, Uvicorn, SQLAlchemy |
+| **Database** | SQLite (default), can be replaced with PostgreSQL |
+| **AI Engine** | Google Gemini API |
+| **Export Tools** | python-docx, python-pptx |
+| **Auth** | JWT Token-based Authentication |
 
-Dashboard for managing all projects
+---
 
-✅ Document Configuration
+## ✨ Features  
 
-Choose between .docx (Word) or .pptx (PowerPoint)
+- 🔐 **User Authentication (JWT)** – Secure login and registration  
+- 🧾 **Project Creation** – Create document or presentation projects  
+- 🤖 **AI Content Generation** – Powered by Google Gemini  
+- 🪄 **Section Refinement** – Provide custom AI prompts to improve or shorten content  
+- 👍 **Feedback System** – Like/dislike each section with comments  
+- 💬 **Comment Saving** – Save section-wise notes and feedback  
+- 📤 **Export Options** – Download `.docx` or `.pptx` files instantly  
+- ⚙️ **Full-Stack Ready** – Clean React frontend + FastAPI backend  
 
-Define structure — sections or slides
+---
 
-AI-suggested outlines for faster setup
+## 🧱 Project Structure  
 
-✅ AI-Powered Content Generation
+```bash
+ai-doc-platform/
+├── backend/
+│   ├── app/
+│   │   ├── main.py                # FastAPI entry point
+│   │   ├── auth.py                # Authentication routes & logic
+│   │   ├── database.py            # SQLAlchemy engine & DB session
+│   │   ├── models.py              # User, Project, Section, Feedback models
+│   │   ├── schemas.py             # Pydantic schemas for validation
+│   │   ├── llm_service.py         # Gemini API integration for content generation
+│   │   └── routers/
+│   │       ├── auth.py            # Login / Register routes
+│   │       ├── generate.py        # Generate outline & section content via AI
+│   │       ├── refine_feedback.py # Handle feedback, likes/dislikes, comments
+│   │       ├── export.py          # Export DOCX / PPTX documents
+│   │       └── projects.py        # Project CRUD logic
+│   ├── requirements.txt           # Backend dependencies
+│   ├── .env                       # Environment variables (ignored in Git)
+│   └── ai_doc_app.db              # SQLite database (ignored in Git)
+│
+├── frontend/
+│   ├── src/
+│   │   ├── pages/
+│   │   │   ├── Dashboard.jsx      # Project overview
+│   │   │   ├── Editor.jsx         # AI refinement and feedback page
+│   │   │   ├── Login.jsx          # Authentication UI
+│   │   │   └── ProjectConfig.jsx  # Configure project outline & AI generation
+│   │   ├── api.js                 # Axios instance for backend API calls
+│   │   ├── App.jsx                # Routing & global layout
+│   │   └── main.jsx               # Entry point
+│   ├── package.json               # Frontend dependencies
+│   ├── tailwind.config.js         # Tailwind CSS config
+│   └── vite.config.js             # Vite build config
+│
+├── .gitignore
+├── README.md
+└── requirements.txt               # Root-level for Render deployment
 
-Generates contextual text for each section or slide using Gemini API
-
-Stores generated content in the database
-
-✅ Interactive Refinement Interface
-
-Section-by-section refinement using custom AI prompts
-
-Like/Dislike feedback stored per section
-
-Comment box for detailed notes
-
-Seamless in-app regeneration
-
-✅ Document Export
-
-Export fully formatted .docx and .pptx using python-docx and python-pptx
-
-🧩 Tech Stack
-Layer	Technologies
-Frontend	React.js, Vite, Tailwind CSS, Axios
-Backend	FastAPI, SQLAlchemy, Uvicorn
-Database	SQLite (can be swapped with PostgreSQL)
-AI Engine	Google Gemini API
-Auth	JWT Token-based authentication
-Export	python-docx, python-pptx
 
 ⚙️ Setup Instructions
 1️⃣ Clone the Repository
