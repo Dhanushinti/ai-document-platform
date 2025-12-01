@@ -5,6 +5,7 @@ backend/venv/
 *.pyo
 *.pyd
 .pytest_cache/
+*.db
 
 # FastAPI / app stuff
 backend/.env
